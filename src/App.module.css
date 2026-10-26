@@ -1,0 +1,29 @@
+.page { max-width: 1160px; margin: 0 auto; padding: 36px 48px 24px; min-height: 100svh; display: flex; flex-direction: column; }
+.header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; font-size: 24px; font-weight: 700; letter-spacing: -1px; }
+.mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 11px; background: #173c32; color: #f2f3dd; font-family: Georgia, serif; font-size: 26px; }
+.phase { font-size: 12px; letter-spacing: .06em; color: #5b6b61; }
+.intro { margin: 88px 0 34px; }
+.eyebrow { margin: 0; text-transform: uppercase; font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+.intro h1 { margin: 22px 0; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(42px, 6.5vw, 76px); line-height: 1.06; letter-spacing: -.045em; }
+.description { color: #58665d; line-height: 1.7; max-width: 480px; font-size: 16px; }
+.card { max-width: 560px; width: 100%; padding: 28px 32px; border: 1px solid #d9dfd4; border-radius: 18px; background: #fffef9; box-shadow: 0 8px 28px #183b3206; }
+.cardHeader { display: flex; align-items: center; justify-content: space-between; color: #657369; }
+.indicator { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.loading { background: #a98337; }
+.ready { background: #357959; box-shadow: 0 0 0 5px #35795912; }
+.unavailable { background: #a65335; }
+.card h2 { font-size: 26px; letter-spacing: -.03em; margin: 24px 0 10px; font-weight: 600; }
+.detail { color: #58665d; font-size: 14px; line-height: 1.6; min-height: 23px; margin: 0 0 24px; }
+.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 44px; padding: 12px 18px; border: 0; border-radius: 8px; background: #173c32; color: #fffef9; font-size: 13px; font-weight: 600; cursor: pointer; }
+.button:hover:not(:disabled) { background: #295943; }
+.button:disabled { opacity: .65; cursor: wait; }
+.footer { margin-top: auto; padding-top: 64px; display: flex; justify-content: space-between; gap: 24px; font-size: 11px; color: #667268; letter-spacing: .02em; }
+@media (max-width: 600px) {
+  .page { padding: 24px; }
+  .phase { font-size: 10px; }
+  .brand { font-size: 21px; }
+  .intro { margin-top: 64px; }
+  .card { padding: 24px; }
+  .footer { flex-wrap: wrap; gap: 10px; padding-top: 48px; }
+}
